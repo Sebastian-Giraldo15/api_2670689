@@ -10,7 +10,7 @@ const getUsuario = async(req, res) => {
 }
 
 const postUsuario = async(req, res) => {
-    const datos = req.query //Capturar datos de la URL-postman
+    const datos = req.body //Capturar datos de la URL-postman
     let mensaje = 'Insercion exitosa'
     try {
         const usuario = new Usuario(datos) //Instanciar el objeto
